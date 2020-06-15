@@ -1,0 +1,4 @@
+In this project I have tried to automate AWS by terraform like creating instance, ebs volume, security-group, private key.
+Integrate S3 with cloudfront.
+I have created seperate file with codes in terraform. All the code can be written in one single file.
+Thanks !!!
