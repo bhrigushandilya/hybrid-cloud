@@ -7,7 +7,7 @@ resource "null_resource" "null1"{
 	connection{
 		type = "ssh"
 		user = "ec2-user"
-		private_key = file("C:/Users/Bhrigu/.ssh/id_rsa")
+		private_key = tls_private_key.key1.private_key_pem
 		host = aws_instance.instance1.public_ip
 	}
 	provisioner "remote-exec"{
